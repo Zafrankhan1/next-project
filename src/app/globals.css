@@ -17,7 +17,9 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  text-decoration: dotted;
+
+  color: red;
   background: linear-gradient(
       to bottom,
       transparent,
