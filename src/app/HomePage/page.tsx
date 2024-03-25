@@ -6,7 +6,7 @@ function HomePage() {
   const route = useRouter();
   return (
     <div>
-    <div>This is a HomePage</div>
+    <div>This is a Login</div>
 
     <Link href={"/NamePage"}>Click Me</Link>
     <p onClick={()=>route.push('/NamePage')}>Click me</p>
