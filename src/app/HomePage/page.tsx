@@ -1,15 +1,12 @@
-'use client'
-import Link from "next/link";
+"use client"
+import { useRouter } from "next/navigation";
 
-import { useRouter } from 'next/navigation';
 function HomePage() {
-  const route = useRouter();
+  let Route=useRouter();
   return (
     <div>
-    <div>This is a Login</div>
-
-    <Link href={"/NamePage"}>Click Me</Link>
-    <p onClick={()=>route.push('/NamePage')}>Click me</p>
+      <div>This is HomePage</div>
+      <h1 onClick={()=>Route.push("/NamePage")}> Submit Me</h1>
     </div>
   )
 }
